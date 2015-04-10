@@ -322,16 +322,16 @@ namespace UltimateCarry
 			if (!IsTeleportToClone("R"))
 			{
 
-				var dmg = DamageLib.getDmg(target, DamageLib.SpellType.Q);
-				dmg += DamageLib.getDmg(target, DamageLib.SpellType.E);
-				dmg += DamageLib.getDmg(target, DamageLib.SpellType.R);
-				dmg += DamageLib.getDmg(target, DamageLib.SpellType.AD)*2;
+				//var dmg = DamageLib.getDmg(target, DamageLib.SpellType.Q);
+				//dmg += DamageLib.getDmg(target, DamageLib.SpellType.E);
+				//dmg += DamageLib.getDmg(target, DamageLib.SpellType.R);
+				//dmg += DamageLib.getDmg(target, DamageLib.SpellType.AD)*2;
 
-				if (dmg >= target.Health)
-				{
+				//if (dmg >= target.Health)
+				//{
 					R.Cast(target);
 					SearchForClone("R");
-				}
+			//	}
 			}
 			else
 				if(ObjectManager.Player.Health * 100 / ObjectManager.Player.MaxHealth < target.Health * 100 / target.MaxHealth)
